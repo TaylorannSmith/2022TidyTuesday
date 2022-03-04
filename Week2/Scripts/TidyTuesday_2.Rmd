@@ -1,0 +1,33 @@
+---
+title: "TidyTuesday_2"
+author: "Taylorann"
+date: "3/1/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Tidy Tuesday Week 2: Trying to work in  Rmarkdown
+
+## About the dataset
+
+
+
+## Load Libraries
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+```
+
+## Load Data
+```{r}
+tuesdata <- tidytuesdayR::tt_load('2022-03-01')
+tuesdata <- tidytuesdayR::tt_load(2022, week = 9)
+stations <- tuesdata$stations
+```
+
+
+
+
+
