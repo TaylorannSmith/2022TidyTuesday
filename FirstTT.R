@@ -42,6 +42,7 @@ data_2019<-filter(.data = longdata, year == 2019)
 data_2020<-filter(.data = longdata, year == 2020)
 data_2021<-filter(.data = longdata, year == 2021)
 #Plot----------------------------------------------------------
+<<<<<<< HEAD
 p1<-data_2019 %>% 
   ggplot( aes(x = Plastic_Type,y=Plastic_Count, fill=Plastic_Type)) + 
   geom_col() +
@@ -55,4 +56,14 @@ p1<-data_2019 %>%
 
 p1
 ggsave(here("Week1","first_tidytuesday.png"))  
+=======
+data_2019 %>% 
+  ggplot( aes(x = Plastic_Type,y=Plastic_Count, fill=Plastic_Type)) + 
+  geom_col() +
+  xlab("Plastic Type") +
+  theme(legend.position = "none") +
+  xlab("") +
+  facet_grid(country~parent_company)
+  
+>>>>>>> 12f6431968966e51670a186b0dcb806760fa7989
 

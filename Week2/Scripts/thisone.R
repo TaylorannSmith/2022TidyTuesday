@@ -43,5 +43,5 @@ KanYe<- Plot+
                 right = 0.95,
                 top = 0.95)
 KanYe
-ggsave(here("Week2","TidyTwosYe.png"))#Save the plot as a png in the correct folder
+ggsave(here("Week2","Output", "TidyTwosYe.png"))#Save the plot as a png in the correct folder
 
