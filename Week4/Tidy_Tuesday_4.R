@@ -7,6 +7,7 @@
 library(plotly)
 library(reprex)
 
+
 #------------------------------------------------------------------------------------
 #Load data
 
@@ -49,7 +50,7 @@ DuBois<-tibble::tribble(
 
 
 fig <- plot_ly(DuBois, x= ~Year, y= ~Property.Valuation, type= 'scatter', mode= 'lines+markers')%>% #Type of plot is a scatter plot but added a line with individual marks for easy viewing
-  layout(title = list(text='Property Value of Black Americans from 1870-1900', y = 0.95, x = 0.5, xanchor = 'center', yanchor =  'top'), plot_bgcolor = "#e5ecf6")# in order to change title, it has to be as a list of text laytout(title=list(text='Whatever you want it to say'))
+  layout(title = list(text='Property Value of Black Americans from 1870-1900', y = 0.95, x = 0.5, xanchor = 'center', yanchor =  'top'), plot_bgcolor = "linen")# in order to change title, it has to be as a list of text laytout(title=list(text='Whatever you want it to say'))
 fig
 
 
